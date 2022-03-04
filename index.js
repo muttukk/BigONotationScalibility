@@ -1,8 +1,10 @@
 const nemo = ["nemo"];
+const boxes = [0,1];
 const large=new Array(10000).fill("nemo")
 
 function findNemo(array) {
-  //let t0 = performance.now();
+ 
+  // Linear Opertion O(n) linear time
   for (let i = 0; i < array.length; i++) {
     if (array[i] === "nemo") {
       console.log("Nemo Found");
@@ -12,9 +14,17 @@ function findNemo(array) {
     if(j===k){console.log("type strict match")} 
     else { console.log("type strict match failed") }*/
   }
-  //let t1 = performance.now();
- //Console.log("Performance time in " + (t1 - t0) + " Millisocnds");
 };
 
-findNemo(large);
-// O(n)-- Linear , operations increase acc to input
+function WriteData(boxes)
+{
+  console.log(boxes[0]);
+  console.log(boxes[1]);
+}
+// Big O notations
+findNemo(nemo);
+// O(n)-- Linear , operations increase acc to input- FAIR
+
+WriteData(boxes);
+// O(1)-- COnstant , Opertion is constant 
+// irresptive of the input size EXCELLENT
